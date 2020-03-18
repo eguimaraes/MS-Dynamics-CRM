@@ -1,0 +1,13 @@
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\CRMUpDatePlugIn.dll
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\CRMUpDatePlugIn.pdb
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\ed\source\repos\CRMUpDatePlugIn\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\ed\source\repos\CRMUpDatePlugIn\obj\Debug\CRMUpDatePlugIn.csproj.CoreCompileInputs.cache
+C:\Users\ed\source\repos\CRMUpDatePlugIn\obj\Debug\CRMUpDatePlugIn.csproj.CopyComplete
+C:\Users\ed\source\repos\CRMUpDatePlugIn\obj\Debug\CRMUpDatePlugIn.dll
+C:\Users\ed\source\repos\CRMUpDatePlugIn\obj\Debug\CRMUpDatePlugIn.pdb
+C:\Users\ed\source\repos\CRMUpDatePlugIn\obj\Debug\CRMUpDatePlugIn.csprojAssemblyReference.cache
