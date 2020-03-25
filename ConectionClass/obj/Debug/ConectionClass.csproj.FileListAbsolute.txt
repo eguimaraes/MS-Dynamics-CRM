@@ -1,0 +1,12 @@
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\ConectionClass.exe.config
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\ConectionClass.exe
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\ConectionClass.pdb
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\ed\source\repos\ConectionClass\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\ed\source\repos\ConectionClass\obj\Debug\ConectionClass.csprojAssemblyReference.cache
+C:\Users\ed\source\repos\ConectionClass\obj\Debug\ConectionClass.csproj.CoreCompileInputs.cache
+C:\Users\ed\source\repos\ConectionClass\obj\Debug\ConectionClass.csproj.CopyComplete
+C:\Users\ed\source\repos\ConectionClass\obj\Debug\ConectionClass.exe
+C:\Users\ed\source\repos\ConectionClass\obj\Debug\ConectionClass.pdb
