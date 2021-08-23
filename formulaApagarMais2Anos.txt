@@ -1,0 +1,2 @@
+ref: https://docs.microsoft.com/en-us/azure/logic-apps/workflow-definition-language-functions-reference
+@greater(utcNow('yyyyMMdd'), formatDateTime(adddays(item()?['Created'],730),'yyyyMMdd'))
