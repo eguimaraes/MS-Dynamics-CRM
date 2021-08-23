@@ -1,0 +1,2 @@
+Referencia: https://powerusers.microsoft.com/t5/Using-Flows/Automatically-delete-files-in-Document-Library-after-X-days/td-p/70009
+@greater(utcNow('yyyyMMdd'), formatDateTime(adddays(item()?['Created'],7),'yyyyMMdd'))
