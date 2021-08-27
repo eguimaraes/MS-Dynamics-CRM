@@ -1,0 +1,48 @@
+//-------------------------------------------------------------------------------------------
+// getRelatedInfo
+//-------------------------------------------------------------------------------------------
+
+function getRelatedInfo(e) {
+
+    // Get the Form Context
+    var formContext = e.getFormContext(); 
+
+    // Set variables for the related entity to get data from
+    try{var recordGuid = formContext.getAttribute("lookupField").getValue()[0].id; }
+    catch(err) {}
+
+    
+    // If the recordGuid contains data
+    if (recordGuid != null) {
+    
+        // Use the WebApi to get data    
+        Xrm.WebApi.retrieveRecord("entityName", recordGuid, "?$select=name,revenue").then(
+            
+            // If successful, set variables for the results 
+            function success(result) {
+                var abc = result.field1Name;
+                var def = result.field2Name;
+                
+                // Set the form fields
+                formContext.getAttribute("field1").setValue(abc);
+
+            },
+            // If there's an error in the WebApi call, log the error and alert the user
+            function (error) {
+                console.log(error.message);
+                // handle error conditions
+                var errorMessage = 'Error: An error occurred in the GetRelatedInfo function: ' + error.message;
+                var alertStrings = { confirmButtonLabel: "Yes", text: errorMessage };
+                var alertOptions = { height: 120, width: 260 };
+                Xrm.Navigation.openAlertDialog(alertStrings, alertOptions).then(
+                    function success(result) {
+                        console.log("Alert dialog closed");
+                    },
+                    function (error) {
+                        console.log(error.message);
+                    }
+                );  
+            }
+        );
+    }
+}
