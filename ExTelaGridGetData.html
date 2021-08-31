@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Account Services</title>
+    <script src="ls_Script_JQuery_1.7.1.min"></script>
+    <script src="ClientGlobalContext.js.aspx"></script>
+    <script language="javascript" type="text/javascript">
+        function loadAccountServices() {
+            //Get Account Guid
+            var accountId = window.parent.Xrm.Page.data.entity.getId();
+            //Get Account Services
+            var accountServices = getAccountServices(accountId);
+            if (accountServices != null && accountServices.length > 0) {
+                var tableData = "";
+                for (var i = 0; i < accountServices.length; i++) {
+                    var service = accountServices[i].ls_name;
+                    if (service != null) {
+                        //dynamically add table data with Service Names
+                        tableData = tableData + "<tr><td>" + service + "</td></tr>";
+                    }
+                }
+                //Create HTML table
+                var table = "<table style='font-family:Segoe UI;font-weight:normal;font-size:13px;'><tr style='height:20px'><td style='text-decoration:underline;'>Account Services</td></tr>" + tableData + "</table>";
+                //show table data on the Account form
+                window.document.writeln(table);
+            }
+        }
+        //get Account Services
+        function getAccountServices(accountId) {
+            var serverUrl = location.protocol + "//" + location.host + "/" + Xrm.Page.context.getOrgUniqueName();
+            var oDataUri = serverUrl + "/xrmservices/2011/OrganizationData.svc/ls_accountserviceSet?$select=ls_name&$filter=ls_Account/Id eq guid'" + accountId + "'";
+            var accountServices = null;
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                datatype: "json",
+                url: oDataUri,
+                async: false,
+                beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("Accept", "application/json");
+                },
+                success: function (data, textStatus, XmlHttpRequest) {
+                    if (data != null && data.d.results.length > 0) {
+                        accountServices = data.d.results;
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                }
+            });
+            return accountServices;
+        }
+    </script>
+</head>
+<body onload="loadAccountServices();">
+</body>
+</html>
