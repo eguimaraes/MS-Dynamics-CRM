@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<grid name="resultset" object="112" jump="title" select="1" icon="1" preview="1">  
+   <row name="result" id="incidentid">  
+      <cell name="title" width="300" />  
+      <cell name="ticketnumber" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />  
+      <cell name="prioritycode" width="150" imageproviderfunctionname="casePriorityIcons" imageproviderwebresource="$webresource:ashv_ViewCustomizations" />  
+      <cell name="caseorigincode" width="100" />  
+      <cell name="customerid" width="150" />  
+      <cell name="ownerid" width="150" />  
+      <cell name="statecode" width="150" />  
+      <cell name="createdon" width="150" />  
+   </row>  
+</grid>  
